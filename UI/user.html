@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>User </title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<div class="main-nav">
+		<div class="logo">
+			<span class="cyan">Main</span>Tracker
+		</div>
+		<div class="left-nav">
+			<a href="#">Dashboard</a>
+		</div>
+		<div>
+			<a href="#">@JohnDoe</a>
+		</div>
+		<div>
+			<a href="index.html">Sign out</a>
+		</div>
+	</div>
+	<div id="user-section">
+		<div class="main-box">
+			<div class="main-header">
+            	<div>
+            		<h2 class="cyan">My Requests</h2>
+            	</div>
+            	<div>
+            		<div class="form-element-group ">
+						<button type="button" class="btn btn-main trigger">Create New Request</button>
+					</div>
+            	</div>
+            	<div>
+            		<form>
+						<div class="form-element-group ">
+							<input type="text" class="form-element" placeholder="search.." name="search">
+							<button type="submit" class="btn btn-search" name="search">Search</button>
+						</div>
+					</form>
+            	</div>
+            </div>
+			<table class="main-table">
+				<thead>
+					<tr>
+						<th class="mutted">
+							<a href="#" class="mutted">
+								Date <img src="sort.png" class="sort-icon">
+							</a>
+						</th>
+						<th class="mutted">Requests</th>
+						<th class="mutted sm">
+							<a href="#" class="mutted">
+								Status <img src="sort.png" class="sort-icon">
+							</a>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="bg-white">
+						<td class="b-pending">
+							<div class="req-date">
+								<p class="light">
+									<span class="">25-Mar</span>
+								</p>
+							</div>
+						</td>
+						<td>
+							<div class="req" >
+								<a class="toggle" id="req1" onclick="showMore('req1')">	
+									<p class="pending">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+									<p class="pending detail">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="req-status">
+								<p>
+									<span class="pending">pending</span>
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr class="bg-white">
+						<td class="b-accepted">
+							<div class="req-date">
+								<p class="light">
+									<span class="">25-Mar</span>
+								</p>
+							</div>
+						</td>
+						<td>
+							<div class="req">
+								<a class="toggle" id="req2" onclick="showMore('req2')">	
+									<p class="accepted">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+									<p class="accepted detail">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="req-status">
+								<p>
+									<span class="accepted">approved</span>
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr class="bg-white">
+						<td class="b-resolved">
+							<div class="req-date">
+								<p class="light">
+									<span class="">25-Mar</span>
+								</p>
+							</div>
+						</td>
+						<td>
+							<div class="req">
+								<a class="toggle" id="req3" onclick="showMore('req3')">	
+									<p class="resolved">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+									<p class="resolved detail">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="req-status">
+								<p>
+									<span class="resolved">resolved</span>
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr class="bg-white">
+						<td class="b-rejected">
+							<div class="req-date">
+								<p class="light">
+									<span class="">25-Mar</span>
+								</p>
+							</div>
+						</td>
+						<td>
+							<div class="req">
+								<a class="toggle" id="req4" onclick="showMore('req4')">	
+									<p class="rejected">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+									<p class="rejected detail">
+										Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm..t, sed do eiusm..
+									</p>
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="req-status">
+								<p>
+									<span class="rejected">rejected</span>
+								</p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="form-pagination">
+				<button type="submit" class="btn btn-disabled" disabled>Prev</button>
+				<button type="submit" class="btn btn-main">Next</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<p class="cyan">Copy right &copy; 2018</p>
+		</div>
+		<div>
+			 <p class="cyan">MainTracker</p>
+		</div>
+	</footer>
+	<!-- Dialog -->
+	<div class="dialog">
+        <div class="dialog-content auto-width">
+            <button class="btn close-button">Close</button>
+            <div class="">
+            	<h3 class="cyan">Create a new request here!</h2>
+            	<form>
+            		<div class="form-group">
+            			<label>Request title</label>
+            			<input type="text" class="text-element" name="title">
+            		</div>
+            		<div class="form-group">
+            			<label>Request description</label>
+            			<textarea class="text-element" name="description"></textarea>
+            		</div>
+            		<div class="form-group">
+            			<button class="btn btn-main" type="submit" name="send">Send request</button>
+            		</div>
+            	</form>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

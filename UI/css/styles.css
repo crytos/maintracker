@@ -11,7 +11,6 @@ div{
 a {
 	text-decoration: none !important;
 }
-
 .sort-icon{
 	position: relative;
 	height: 20px;
@@ -55,6 +54,7 @@ a {
 #admin-section{
 	width: 100%;
 	margin-top: 15px;
+	margin-bottom: 25px;
 }
 
 #user-section{
@@ -120,9 +120,9 @@ a {
 .left-nav{
 	margin-left: auto;
 }
-.main-box{
 
-}
+/* Main section */
+
 .main-table{
 	width: 100%;
 }
@@ -303,10 +303,20 @@ a {
     visibility: visible;
 }
 
+/*Footer section*/
+
 footer{
 	display: flex;
-	justify-content: space-between;
-	max-height: 200px;
-	background-color: #ccc;
-	padding: 1% 7%;
+    justify-content: space-between;
+    max-height: 200px;
+    background-color: #ccc;
+    padding: 1% 7%;
+    margin: 0 -15px;
+}
+.container {
+    min-height: 90vh;
+}
+
+.footer {
+    height: 10vh;
 }

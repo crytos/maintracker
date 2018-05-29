@@ -22,7 +22,7 @@ function showMore(id) {
 	req_desc.lastElementChild.classList.toggle("detail");
 }
 
-// Toggle signup and signin form
+// Toggle between signup and signin form
 function showSignup(form1,form2) {
 	var auth = document.querySelector(".auth-type1");
 	var auth2 = document.querySelector(".auth-type2");

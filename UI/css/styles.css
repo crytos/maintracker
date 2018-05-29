@@ -120,9 +120,9 @@ a {
 .left-nav{
 	margin-left: auto;
 }
-.main-box{
 
-}
+/* Main section */
+
 .main-table{
 	width: 100%;
 }
@@ -302,6 +302,8 @@ a {
     opacity: 1;
     visibility: visible;
 }
+
+/*Footer section*/
 
 footer{
 	display: flex;
